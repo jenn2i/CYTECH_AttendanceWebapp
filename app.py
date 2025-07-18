@@ -5,6 +5,9 @@ st.set_page_config(page_title="QR Attendance System", layout="centered")
 st.image("logo.png", width=150)
 st.title("QR Attendance System")
 
+if "page" not in st.session_state:
+    st.session_state.page = "generate"
+
 # 상단에 두 개 버튼 배치
 col1, col2 = st.columns(2)
 
@@ -18,7 +21,7 @@ with col2:
     if st.button("QR Code Scanner"):
         st.session_state.page = "scan"
 
-st.markdown("----------------------------------------------")
+st.title("----------------------------------------------")
 
 # 페이지별로 모듈 호출
 if st.session_state.page == "generate":
