@@ -60,16 +60,20 @@ Students Attendance System
 
 ## 📸 데모
 
+### Main Page
 ![MainPage](demo/mainpage.png)
 This is the main page.
 You can both generate and scan QR codes.
 
+### QR Generate Page
 ![GeneratePage](demo/qrgenerate.png)
 When you put student ID into the input field, a QR code is generated with the encrypted student ID.
 
+### QR Scan Page
 ![ScanPage](demo/qrscan.png)
 On the QR Scan page, pressing the "Scan your QR Code" button and scanning the QR code will be detect the encrypted student ID.
 
+### Attendance Records page
 ![AttendanceRecords](demo/records.png)
 You can see the attendance records.
 We will update it later to encrypt the records as well.
