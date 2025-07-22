@@ -47,7 +47,7 @@ Students Attendance System
 2. 필요한 패키지 설치
 
     ```bash
-    pip install opencv-python pyzbar pycryptodome
+    pip install -r requirements.txt
     ```
 
 4. 실행
@@ -60,6 +60,21 @@ Students Attendance System
 
 ## 📸 데모
 
-> 추가 예정
+![MainPage](demo/mainpage.png)
+This is the main page.
+You can both generate and scan QR codes.
+
+![GeneratePage](demo/qrgenerate.png)
+When you put student ID into the input field, a QR code is generated with the encrypted student ID.
+
+![ScanPage](demo/qrscan.png)
+On the QR Scan page, pressing the "Scan your QR Code" button and scanning the QR code will be detect the encrypted student ID.
+
+![AttendanceRecords](demo/records.png)
+You can see the attendance records.
+We will update it later to encrypt the records as well.
+
+➕ Additional features
+If you can't open webcam or you want to upload a photo from an app instead, opening the QR Page will launch the app automatically.
 
 ---
